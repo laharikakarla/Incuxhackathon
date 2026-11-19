@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="defGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <radialGradient id="radarSweep" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#defGrad)"/>
+  <circle cx="300" cy="180" r="130" fill="url(#radarSweep)"/>
+  <!-- Radar Rings -->
+  <circle cx="300" cy="180" r="120" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8,6" fill="none" opacity="0.4"/>
+  <circle cx="300" cy="180" r="85" stroke="#38bdf8" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <circle cx="300" cy="180" r="45" stroke="#38bdf8" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- Crosshairs -->
+  <line x1="300" y1="40" x2="300" y2="320" stroke="#38bdf8" stroke-width="1.5" opacity="0.4"/>
+  <line x1="160" y1="180" x2="440" y2="180" stroke="#38bdf8" stroke-width="1.5" opacity="0.4"/>
+  <!-- Shield Glyph -->
+  <path d="M300,105 L360,135 V195 C360,235 300,265 300,265 C300,265 240,235 240,195 V135 Z" fill="#0369a1" stroke="#38bdf8" stroke-width="3" opacity="0.8"/>
+  <path d="M300,120 L345,145 V195 C345,225 300,248 300,248 C300,248 255,225 255,195 V145 Z" fill="#0284c7" stroke="#7dd3fc" stroke-width="1.5"/>
+  <circle cx="300" cy="180" r="12" fill="#bae6fd"/>
+  <!-- Targets Detected -->
+  <circle cx="230" cy="120" r="4" fill="#f43f5e"/>
+  <circle cx="370" cy="220" r="4" fill="#38bdf8"/>
+  <circle cx="390" cy="110" r="5" fill="#f59e0b"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="spaceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090a0f"/>
+      <stop offset="60%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <radialGradient id="starGlow" cx="60%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#spaceGrad)"/>
+  <circle cx="360" cy="110" r="110" fill="url(#starGlow)"/>
+  <!-- Planet Surface -->
+  <circle cx="160" cy="380" r="230" fill="#312e81" stroke="#4338ca" stroke-width="3"/>
+  <path d="M40,320 Q200,280 340,330" stroke="#6366f1" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- Satellite Orbit & Craft -->
+  <ellipse cx="330" cy="170" rx="190" ry="85" stroke="#fef08a" stroke-width="1.5" stroke-dasharray="8,6" fill="none" opacity="0.4" transform="rotate(-18 330 170)"/>
+  <!-- Satellite -->
+  <g transform="translate(390, 105) rotate(22)">
+    <rect x="-18" y="-14" width="36" height="28" fill="#fbbf24" stroke="#fef08a" stroke-width="2" rx="4"/>
+    <!-- Solar Panels -->
+    <rect x="-65" y="-10" width="42" height="20" fill="#38bdf8" stroke="#fef08a" stroke-width="1.5"/>
+    <line x1="-44" y1="-10" x2="-44" y2="10" stroke="#fef08a" stroke-width="1"/>
+    <rect x="23" y="-10" width="42" height="20" fill="#38bdf8" stroke="#fef08a" stroke-width="1.5"/>
+    <line x1="44" y1="-10" x2="44" y2="10" stroke="#fef08a" stroke-width="1"/>
+    <!-- Dish -->
+    <path d="M0,14 Q8,24 16,18" stroke="#fef08a" stroke-width="2" fill="none"/>
+  </g>
+  <!-- Constellation Stars -->
+  <circle cx="100" cy="60" r="2.5" fill="#ffffff"/>
+  <circle cx="210" cy="90" r="2" fill="#fde047"/>
+  <circle cx="480" cy="60" r="3" fill="#ffffff"/>
+  <circle cx="530" cy="140" r="2" fill="#ffffff"/>
+</svg>

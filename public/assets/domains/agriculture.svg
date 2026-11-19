@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="agriGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="50%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#064e3b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#6ee7b7"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#agriGrad)"/>
+  <circle cx="300" cy="140" r="140" fill="url(#sunGlow)"/>
+  <!-- Field Contours -->
+  <path d="M0,280 Q150,220 300,260 T600,240 L600,360 L0,360 Z" fill="#022c22" opacity="0.6"/>
+  <path d="M0,300 Q200,250 400,290 T600,280 L600,360 L0,360 Z" fill="#064e3b" opacity="0.8"/>
+  <!-- IoT Crop Sensors / Grid Lines -->
+  <line x1="120" y1="280" x2="120" y2="230" stroke="#34d399" stroke-width="2" stroke-dasharray="4,4"/>
+  <circle cx="120" cy="225" r="7" fill="#34d399"/>
+  <line x1="480" y1="290" x2="480" y2="240" stroke="#34d399" stroke-width="2" stroke-dasharray="4,4"/>
+  <circle cx="480" cy="235" r="7" fill="#34d399"/>
+  <!-- Center Sprout / Tech Plant -->
+  <path d="M300,300 Q300,170 300,130" stroke="#a7f3d0" stroke-width="6" stroke-linecap="round"/>
+  <path d="M300,210 Q240,180 230,140 Q280,140 300,190 Z" fill="url(#leafGrad)"/>
+  <path d="M300,170 Q360,140 370,100 Q320,100 300,150 Z" fill="url(#leafGrad)"/>
+  <circle cx="300" cy="120" r="10" fill="#6ee7b7"/>
+  <!-- Tech Signals -->
+  <circle cx="300" cy="120" r="24" stroke="#a7f3d0" stroke-width="2" fill="none" opacity="0.6"/>
+  <circle cx="300" cy="120" r="42" stroke="#a7f3d0" stroke-width="1.5" stroke-dasharray="6,6" fill="none" opacity="0.4"/>
+</svg>
